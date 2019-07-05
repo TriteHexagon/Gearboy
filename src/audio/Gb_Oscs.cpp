@@ -323,7 +323,7 @@ void Gb_Square::run( blip_time_t time, blip_time_t end_time )
 {
 	// Calc duty and phase
 	static byte const duty_offsets [4] = { 1, 1, 3, 7 };
-	static byte const duties       [4] = { 1, 2, 4, 6 };
+	static byte const duties       [4] = { 1, 2, 4, 3 };
 	int const duty_code = regs [1] >> 6;
 	int duty_offset = duty_offsets [duty_code];
 	int duty = duties [duty_code];
